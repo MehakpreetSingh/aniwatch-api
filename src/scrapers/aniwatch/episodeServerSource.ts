@@ -53,7 +53,7 @@ export const scrapeAnimeEpisodeSources = async (
   }
 
   const epId = new URL(`/watch/${episodeId}`, URLs.BASE).href;
-  console.log(epId);
+  console.log("Episode",epId);
 
   try {
     const resp = await axios.get(
